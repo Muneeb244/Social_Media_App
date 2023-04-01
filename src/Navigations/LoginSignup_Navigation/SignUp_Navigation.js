@@ -2,17 +2,18 @@ import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import SignUp_EnterEmail from '../Screens/SignUp/SignUp_EnterEmail';
-import SignUp_VericationCode from '../Screens/SignUp/SignUp_VericationCode';
-import SignUp_EnterPassword from '../Screens/SignUp/SignUp_EnterPassword';
-import SignUp_ChooseUserName from '../Screens/SignUp/SignUp_ChooseUserName';
-import SignUp_Success from '../Screens/SignUp/SignUp_Success';
+import SignUp_EnterEmail from '../../Screens/LoginSignUp/SignUp/SignUp_EnterEmail';
+import SignUp_VericationCode from '../../Screens/LoginSignUp/SignUp/SignUp_EnterVerificationCode';
+import SignUp_EnterPassword from '../../Screens/LoginSignUp/SignUp/SignUp_EnterPassword';
+import SignUp_ChooseUserName from '../../Screens/LoginSignUp/SignUp/SignUp_ChooseUserName';
+import SignUp_Success from '../../Screens/LoginSignUp/SignUp/SignUp_Success';
 
 const Stack = createNativeStackNavigator();
 
 const SignUp_Navigation = () => {
   return (
-    <Stack.Navigator>
+    
+    <Stack.Navigator screenOptions={{headerShown: false}}>
       <Stack.Screen name="SignUp_EnterEmail" component={SignUp_EnterEmail} />
       <Stack.Screen name="SignUp_VericationCode" component={SignUp_VericationCode} />
       <Stack.Screen name="SignUp_EnterPassword" component={SignUp_EnterPassword} />
