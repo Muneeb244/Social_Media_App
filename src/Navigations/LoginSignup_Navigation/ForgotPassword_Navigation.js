@@ -17,6 +17,7 @@ const ForgotPassword_Navigation = () => {
         <Stack.Screen name="Forgot_EnterVerificationCode" component={Forgot_EnterVerificationCode} />
         <Stack.Screen name="Forgot_EnterNewPassword" component={Forgot_EnterNewPassword} />
         <Stack.Screen name="Forgot_Success" component={Forgot_Success} />
+
     </Stack.Navigator>
   )
 }
