@@ -16,14 +16,16 @@ module.exports = {
     },
     formBtn: {
         width: '80%',
-        height: 40,
+        height: 45,
         backgroundColor: '#000',
         borderRadius: 10,
-        padding: 10,
+        padding: 5,
         fontSize: 25,
         color: '#fff',
         textAlign: 'center',
         marginTop: 20,
+        borderWidth: 1,
+        borderColor: '#fff',
     },
     rightText: {
         color: '#F4F4F4',
