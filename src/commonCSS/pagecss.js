@@ -6,12 +6,17 @@ module.exports = {
         alignItems: 'center',
         justifyContent: 'center'
     },
+    // logo1: {
+    //     // width: 200,
+    //     height: 70,
+    //     resizeMode: 'contain',
+    //     marginBottom: 20
+    //     // backgroundColor: 'white',
+    // },
     logo1: {
-        // width: 200,
-        height: 70,
+        width: 200,
+        height: 150,
         resizeMode: 'contain',
-        marginBottom: 20
-        // backgroundColor: 'white',
     },
     hr80: {
         width: '80%',
