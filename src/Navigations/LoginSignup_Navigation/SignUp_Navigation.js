@@ -7,7 +7,7 @@ import SignUp_EnterVerificationCode from '../../Screens/LoginSignUp/SignUp/SignU
 import SignUp_EnterPassword from '../../Screens/LoginSignUp/SignUp/SignUp_EnterPassword';
 import SignUp_ChooseUserName from '../../Screens/LoginSignUp/SignUp/SignUp_ChooseUserName';
 import SignUp_Success from '../../Screens/LoginSignUp/SignUp/SignUp_Success';
-import Login_Navigation from './Login_Navigation';
+import HomePage from '../../Screens/MainPage/HomePage';
 
 
 const Stack = createNativeStackNavigator();
@@ -21,7 +21,7 @@ const SignUp_Navigation = () => {
       <Stack.Screen name="SignUp_ChooseUserName" component={SignUp_ChooseUserName} />
       <Stack.Screen name="SignUp_EnterPassword" component={SignUp_EnterPassword} />
       <Stack.Screen name="SignUp_Success" component={SignUp_Success} />
-      <Stack.Screen name="Login_Navigation" component={Login_Navigation} options={{animation: 'slide_from_left'}} />
+      <Stack.Screen name="HomePage" component={HomePage} />
     </Stack.Navigator>
   )
 }

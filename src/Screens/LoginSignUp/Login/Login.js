@@ -21,7 +21,6 @@ import {
 
 import { hr80, containerFull, logo1 } from "../../../commonCSS/pagecss";
 
-import ForgotPassword_Navigation from "../../../Navigations/LoginSignup_Navigation/ForgotPassword_Navigation";
 import { Formik } from "formik";
 import * as yup from "yup";
 import ErrorMessage from "../../../Components/ErrorMessage";
@@ -80,7 +79,7 @@ const Login = ({ navigation }) => {
             />
             <Text
               style={rightText}
-              onPress={() => navigation.navigate(ForgotPassword_Navigation)}
+              onPress={() => navigation.navigate('Forgot_EnterEmail')}
             >
               Forgot Password?
             </Text>

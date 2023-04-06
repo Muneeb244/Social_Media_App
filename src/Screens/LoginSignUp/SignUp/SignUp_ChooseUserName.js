@@ -24,8 +24,6 @@ const SignUp_ChooseUserName = ({ navigation }) => {
 
   
   const onSubmit = (values, { resetForm }) => {
-    console.log("clicked");
-    console.log(values);
     resetForm();
     navigation.navigate("SignUp_EnterPassword");
   };

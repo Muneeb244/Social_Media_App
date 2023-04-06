@@ -45,7 +45,7 @@ const SignUp_EnterEmail = ({ navigation }) => {
         <>
           <TouchableOpacity
             style={pagecss.goback}
-            onPress={() => navigation.navigate("Login_Navigation")}
+            onPress={() => navigation.goBack()}
           >
             <Ionicons name="arrow-back" size={24} color="gray" />
             <Text style={{ color: "gray" }}>Go Back</Text>
