@@ -6,13 +6,14 @@ import ForgotPassword_Navigation from './src/Navigations/LoginSignup_Navigation/
 import {NavigationContainer} from '@react-navigation/native';
 import Login from './src/Screens/LoginSignUp/Login/Login';
 import SignUp_EnterPassword from './src/Screens/LoginSignUp/SignUp/SignUp_EnterPassword';
+import HomePage from './src/Screens/MainPage/HomePage';
 
 export default function App() {
   return (
     <NavigationContainer>
       <Login_Navigation />
     </NavigationContainer>
-    // <SignUp_EnterPassword />
+    // <HomePage />
     // <Login />
   );
 }

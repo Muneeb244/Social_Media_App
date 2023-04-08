@@ -33,7 +33,7 @@ const Login = ({ navigation }) => {
 
   const sendToBackend = (values, { resetForm }) => {
     resetForm();
-    // () => navigation.navigate("HomePage")
+    navigation.navigate("HomePage")
   };
   return (
     <View style={containerFull}>
@@ -43,7 +43,7 @@ const Login = ({ navigation }) => {
           password: "",
         }}
         onSubmit={sendToBackend}
-        validationSchema={loginValidation}
+        // validationSchema={loginValidation}
       >
         {({
           handleChange,
