@@ -3,6 +3,7 @@ import React from 'react';
 import HomePageBottomNavigation from '../../Navigations/HomePageBottomNavigation';
 import { FontAwesome } from '@expo/vector-icons';
 import { useFonts } from 'expo-font';
+import FollowersPost from '../../Components/FollowersPost';
 
 const HomePage = () => {
 
@@ -12,10 +13,6 @@ const HomePage = () => {
 
   return (
     <View style={styles.container}>
-      <View style={styles.header}>
-        <Text style={styles.text}>Memer's Hub</Text>
-        <FontAwesome name="paper-plane" size={21} color="#fff" />
-      </View>
       <HomePageBottomNavigation/>
     </View>
   )
@@ -43,6 +40,5 @@ const styles = StyleSheet.create({
   text: {
     color: '#fff',
     fontSize: 25,
-    fontFamily: 'Alkatra',
   }
 })
