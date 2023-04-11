@@ -11,7 +11,7 @@ const FollowersPost = () => {
             profile_picture: 'https://picsum.photos/300/300',
             post_picture: 'https://picsum.photos/300/300',
             likes: [
-                "user1", "user2"
+                "user1", "user2", "user3"
             ],
             comments: [
                 {
