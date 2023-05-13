@@ -60,7 +60,9 @@ const Post_Big_Card = ({
         )}
       </View>
       <View style={styles.comments}>
-        {showComments && <View style={styles.commentsList}>
+        {console.log(showComments)}
+        {showComments && (
+          <View style={styles.commentsList}>
             {comments.map((comment) => {
               return (
                 <View style={styles.comment}>
@@ -68,9 +70,9 @@ const Post_Big_Card = ({
                   <Text style={styles.commentText}>{comment.comment}</Text>
                 </View>
               );
-            })
-            }
-          </View>}
+            })}
+          </View>
+        )}
       </View>
     </View>
   );
@@ -81,7 +83,7 @@ export default Post_Big_Card;
 const styles = StyleSheet.create({
   container: {
     width: "100%",
-    height: 400,
+    height: 450,
     // borderRadius: 10,
     marginBottom: 20,
     backgroundColor: "#000",
@@ -114,7 +116,7 @@ const styles = StyleSheet.create({
   post_picture: {
     // marginVertical: 10,
     width: "100%",
-    height: "80%",
+    height: 300,
     resizeMode: "cover",
     // aspectRatio: 1,
   },
@@ -138,4 +140,17 @@ const styles = StyleSheet.create({
     backgroundColor: "#000",
     padding: 10,
   },
+  comment: {
+    flexDirection: "row",
+    marginBottom: 10,
+  },
+  commentUsername: {
+    color: "#fff",
+    fontWeight: "bold",
+    marginRight: 5,
+  },
+  commentText: {
+    color: "#fff",
+  },
+  
 });
